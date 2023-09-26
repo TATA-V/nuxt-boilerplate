@@ -12,9 +12,6 @@ export default defineNuxtConfig({
   alias: {
     '#global': path.join(__dirname, '../../global'),
   },
-  devServer: {
-    port: 5000,
-  },
   srcDir: 'src/',
   vite: {
     vue: {
