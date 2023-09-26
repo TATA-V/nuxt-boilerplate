@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  nuxt:
+    container_name: nuxt
+    build:
+      dockerfile: ci/Dockerfile.dev
+    ports:
+      - "${PORT}:${PORT}"
+      - "${HMR_PORT}:${HMR_PORT}"
+    volumes:
+      - ./:/nuxt
+    env_file:
+      - ./.env
+    command: pnpm dev
