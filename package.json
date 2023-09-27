@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "app": "pnpm --ignore-workspace-root-check",
+    "ui": "pnpm -F @app/ui",
     "build": "nuxt build",
     "dev": "nuxt dev --port=${PORT} --host=0.0.0.0",
     "generate": "nuxt generate",
