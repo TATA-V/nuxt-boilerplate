@@ -1,7 +1,8 @@
 <script lang="ts" setup>
+import { greeting } from '@app/ui';
 </script>
 <template>
-    hello world !
+    {{ greeting }}
 </template>
 <style lang="scss" scoped>
 </style>

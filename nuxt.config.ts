@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
   ],
   alias: {
-    '#global': path.join(__dirname, '../../global'),
+    '@app/ui': path.join(__dirname, './libs/ui'),
   },
   srcDir: 'src/',
   vite: {
