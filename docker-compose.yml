@@ -7,7 +7,7 @@ services:
       dockerfile: ci/Dockerfile.dev
     ports:
       - "${PORT}:${PORT}"
-      - "${HMR_PORT}:${HMR_PORT}"
+      - "${HMR_PORT}:24678"
     volumes:
       - ./:/nuxt
     env_file:

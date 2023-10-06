@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     server: {
       hmr: {
         protocol: 'ws',
-        port: Number(process.env.HMR_PORT) || 24678,
+        port: 24678,
         host: '0.0.0.0',
       },
     },
